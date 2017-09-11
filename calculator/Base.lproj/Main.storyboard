@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-OW-bV2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Nj-XkH">
+                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="nte-Sk-gMI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wvV-PD-TbX">
+                                <rect key="frame" x="43" y="63" width="291" height="476"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-3k-rf3">
+                                <rect key="frame" x="67" y="68" width="240" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="9Tm-tG-pxB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="HQQ-JV-J7l">
+                                <rect key="frame" x="67" y="140" width="240" height="374"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYU-kz-GR8">
+                                <rect key="frame" x="77" y="150" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="7" image="7"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZuS-Nl-6ox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sG-3dj">
+                                <rect key="frame" x="159" y="150" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="8" image="8"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbE-Z6-Ehn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evS-2l-L3Z">
+                                <rect key="frame" x="236" y="150" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="9" image="9"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NvE-RZ-qoI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyy-HD-6h9">
+                                <rect key="frame" x="77" y="229" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4" image="4"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xlv-dK-k2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxb-6B-Ohf">
+                                <rect key="frame" x="159" y="229" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="5" image="5"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRI-UB-L0W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zH3-6e-aVF">
+                                <rect key="frame" x="236" y="229" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="6" image="6"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QTy-1s-KdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clz-WP-6Aw">
+                                <rect key="frame" x="77" y="307" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1" image="1"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6XD-x5-6vb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faG-Yu-gpN">
+                                <rect key="frame" x="159" y="307" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2" image="2"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MK0-ST-wJK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7L-5k-lER">
+                                <rect key="frame" x="236" y="307" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3" image="3"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TrU-J7-4NO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-2r-gbD">
+                                <rect key="frame" x="77" y="386" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0" image="0"/>
+                                <connections>
+                                    <action selector="digits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jeo-8a-gO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haL-Ve-ciZ">
+                                <rect key="frame" x="159" y="386" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="/" image="divide"/>
+                                <connections>
+                                    <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hf-67-Sgb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8od-ne-dMb">
+                                <rect key="frame" x="236" y="386" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="×" image="multiply"/>
+                                <connections>
+                                    <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLf-Gt-TSD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sar-UG-l6R">
+                                <rect key="frame" x="77" y="459" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+" image="add"/>
+                                <connections>
+                                    <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZk-bE-sOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utT-ex-8v1">
+                                <rect key="frame" x="159" y="459" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-" image="subtract"/>
+                                <connections>
+                                    <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9N-11-sje"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfu-5p-gwH">
+                                <rect key="frame" x="236" y="459" width="45" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="=" image="equal"/>
+                                <connections>
+                                    <action selector="mathOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoy-Ml-6PD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSK-Lb-UGm">
+                                <rect key="frame" x="80" y="82" width="48" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvV-PD-TbX" secondAttribute="trailing" constant="25" id="1FK-3M-LLk"/>
+                            <constraint firstItem="wvV-PD-TbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="2CS-r9-Oxr"/>
+                            <constraint firstItem="Spt-3k-rf3" firstAttribute="leading" secondItem="HQQ-JV-J7l" secondAttribute="leading" id="2fN-DQ-Sey"/>
+                            <constraint firstItem="Spt-3k-rf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="3Jb-9l-E9A"/>
+                            <constraint firstItem="HQQ-JV-J7l" firstAttribute="top" secondItem="Spt-3k-rf3" secondAttribute="bottom" constant="8" symbolic="YES" id="AXv-g7-Nxh"/>
+                            <constraint firstItem="wvV-PD-TbX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="BuQ-12-Oa7"/>
+                            <constraint firstItem="HQQ-JV-J7l" firstAttribute="centerX" secondItem="eyx-Nj-XkH" secondAttribute="centerX" id="LGw-kK-QsF"/>
+                            <constraint firstItem="Spt-3k-rf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="LT4-ls-rOi"/>
+                            <constraint firstAttribute="trailing" secondItem="3gf-OW-bV2" secondAttribute="trailing" id="M9w-qx-4o8"/>
+                            <constraint firstItem="3gf-OW-bV2" firstAttribute="leading" secondItem="eyx-Nj-XkH" secondAttribute="leading" id="PXZ-lb-QUP"/>
+                            <constraint firstItem="eyx-Nj-XkH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ReG-OW-h6L"/>
+                            <constraint firstItem="Spt-3k-rf3" firstAttribute="trailing" secondItem="HQQ-JV-J7l" secondAttribute="trailing" id="Zj0-Hf-lWH"/>
+                            <constraint firstItem="3gf-OW-bV2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aDL-M0-T27"/>
+                            <constraint firstItem="3gf-OW-bV2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="b2W-m0-0zj"/>
+                            <constraint firstItem="3gf-OW-bV2" firstAttribute="trailing" secondItem="eyx-Nj-XkH" secondAttribute="trailing" id="bfg-Pq-MXv"/>
+                            <constraint firstItem="3gf-OW-bV2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ijc-Ox-5zC"/>
+                            <constraint firstItem="eyx-Nj-XkH" firstAttribute="top" secondItem="HQQ-JV-J7l" secondAttribute="bottom" constant="68" id="k4s-v0-0yV"/>
+                            <constraint firstItem="eyx-Nj-XkH" firstAttribute="top" secondItem="wvV-PD-TbX" secondAttribute="bottom" constant="43" id="zfx-ru-qNi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="uSK-Lb-UGm" id="QhC-3E-sbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="55" height="57"/>
+        <image name="1" width="55" height="57"/>
+        <image name="2" width="55" height="57"/>
+        <image name="3" width="55" height="57"/>
+        <image name="4" width="55" height="57"/>
+        <image name="5" width="55" height="57"/>
+        <image name="6" width="55" height="57"/>
+        <image name="7" width="55" height="57"/>
+        <image name="8" width="55" height="57"/>
+        <image name="9" width="55" height="57"/>
+        <image name="add" width="55" height="57"/>
+        <image name="backpanel" width="310" height="469"/>
+        <image name="counter" width="258" height="66"/>
+        <image name="divide" width="55" height="57"/>
+        <image name="equal" width="55" height="57"/>
+        <image name="ground" width="444" height="36"/>
+        <image name="multiply" width="55" height="57"/>
+        <image name="space-bg" width="494" height="473"/>
+        <image name="subtract" width="55" height="57"/>
+    </resources>
+</document>
